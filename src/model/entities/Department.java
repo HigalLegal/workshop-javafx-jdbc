@@ -9,8 +9,6 @@ public class Department implements Serializable {
 	private Integer id;
 	private String name;
 	
-	//--------------------------------------
-	
 	public Department() {
 	}
 
@@ -18,8 +16,6 @@ public class Department implements Serializable {
 		this.id = id;
 		this.name = name;
 	}
-	
-	//--------------------------------------
 
 	public Integer getId() {
 		return id;
@@ -37,8 +33,6 @@ public class Department implements Serializable {
 		this.name = name;
 	}
 
-	//--------------------------------------
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -66,6 +60,6 @@ public class Department implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Department " + id + " || " + name;
+		return "Department [id=" + id + ", name=" + name + "]";
 	}
 }
